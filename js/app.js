@@ -35,66 +35,66 @@ boxbut33.addEventListener("click", function(){
 
 
 
-// 자동 사진 넘김
-var slideIndexA = 0;
-    showSlidesA();
+// // 자동 사진 넘김
+// var slideIndexA = 0;
+//     showSlidesA();
 
-    function showSlidesA() {
-        var i;
-        var slidesA = document.getElementsByClassName("mySlidesA");
+//     function showSlidesA() {
+//         var i;
+//         var slidesA = document.getElementsByClassName("mySlidesA");
        
-        for (i = 0; i < slidesA.length; i++) {
-            slidesA[i].style.display = "none"
-        }
-        slideIndexA++;
-        if (slideIndexA > slidesA.length) {
-            slideIndexA = 1
-        }
-        slidesA[slideIndexA - 1].style.display = "block";
+//         for (i = 0; i < slidesA.length; i++) {
+//             slidesA[i].style.display = "none"
+//         }
+//         slideIndexA++;
+//         if (slideIndexA > slidesA.length) {
+//             slideIndexA = 1
+//         }
+//         slidesA[slideIndexA - 1].style.display = "block";
     
-        setTimeout(showSlidesA, 2000); // 2초마다 이미지가 체인지
-    }
-// 자동 사진 넘김
-// 자동 사진 넘김
-var slideIndexB = 0;
-    showSlidesB();
+//         setTimeout(showSlidesA, 2000); // 2초마다 이미지가 체인지
+//     }
+// // 자동 사진 넘김
+// // 자동 사진 넘김
+// var slideIndexB = 0;
+//     showSlidesB();
 
-    function showSlidesB() {
-        var i;
-        var slidesB = document.getElementsByClassName("mySlidesB");
+//     function showSlidesB() {
+//         var i;
+//         var slidesB = document.getElementsByClassName("mySlidesB");
        
-        for (i = 0; i < slidesB.length; i++) {
-            slidesB[i].style.display = "none"
-        }
-        slideIndexB++;
-        if (slideIndexB > slidesB.length) {
-            slideIndexB = 1
-        }
-        slidesB[slideIndexB - 1].style.display = "block";
+//         for (i = 0; i < slidesB.length; i++) {
+//             slidesB[i].style.display = "none"
+//         }
+//         slideIndexB++;
+//         if (slideIndexB > slidesB.length) {
+//             slideIndexB = 1
+//         }
+//         slidesB[slideIndexB - 1].style.display = "block";
     
-        setTimeout(showSlidesB, 2000); // 2초마다 이미지가 체인지
-    }
-// 자동 사진 넘김
-// 자동 사진 넘김
-var slideIndexC = 0;
-    showSlidesC();
+//         setTimeout(showSlidesB, 2000); // 2초마다 이미지가 체인지
+//     }
+// // 자동 사진 넘김
+// // 자동 사진 넘김
+// var slideIndexC = 0;
+//     showSlidesC();
 
-    function showSlidesC() {
-        var i;
-        var slidesC = document.getElementsByClassName("mySlidesC");
+//     function showSlidesC() {
+//         var i;
+//         var slidesC = document.getElementsByClassName("mySlidesC");
        
-        for (i = 0; i < slidesC.length; i++) {
-            slidesC[i].style.display = "none"
-        }
-        slideIndexC++;
-        if (slideIndexC > slidesC.length) {
-            slideIndexC = 1
-        }
-        slidesC[slideIndexC - 1].style.display = "block";
+//         for (i = 0; i < slidesC.length; i++) {
+//             slidesC[i].style.display = "none"
+//         }
+//         slideIndexC++;
+//         if (slideIndexC > slidesC.length) {
+//             slideIndexC = 1
+//         }
+//         slidesC[slideIndexC - 1].style.display = "block";
     
-        setTimeout(showSlidesC, 2000); // 2초마다 이미지가 체인지
-    }
-// 자동 사진 넘김
+//         setTimeout(showSlidesC, 2000); // 2초마다 이미지가 체인지
+//     }
+// // 자동 사진 넘김
 
 
 

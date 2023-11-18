@@ -127,7 +127,7 @@
     flex-wrap: wrap;
     gap: 10px;
 }
-.main-sec1 > img, .main-sec-pic > div > img, .mySlidesA img, .mySlidesB img, .mySlidesC img{
+.main-sec-pic > div > img, .mySlidesA img, .mySlidesB img, .mySlidesC img{
     width: 60vw;
     height: 60vw;
     min-width: 300px;
@@ -137,6 +137,7 @@
     border: 1px solid white;
     border-radius: 10px;
 }
+
 @media(max-width:768px){  
     .main-container{
         display: flex;
@@ -150,7 +151,7 @@
         align-items: start;
         padding-left: 10px;
     }
-    .main-sec1 > img, .main-sec-pic > div > img, .mySlidesA img, .mySlidesB img, .mySlidesC img{
+    .main-sec-pic > div > img, .mySlidesA img, .mySlidesB img, .mySlidesC img{
         width: 90vw;
         height: 90vw;
         min-width: 280px;
@@ -160,8 +161,61 @@
         border: 1px solid white;
         border-radius: 10px;
     }
+    .main-sec1 > img{
+        width: 320px;
+        height: 168px;
+    }
 }
 /* 🔺main 전체 공통 - 한장씩,FLEX WRAP관련 사진설정 끝🔺 */
+
+
+
+
+
+
+.main-sec1{
+    background: url("../images1/111.jpg") no-repeat center / cover;
+    padding-top: 50px;
+    width: 95%;
+}
+.main-sec8{
+    background: url("../images1/33333.png") no-repeat center / cover;
+}
+.mainAll > div:first-of-type{
+    width: 95%;
+}
+/* 🟡테이블 설정시작🟡 */
+.table1{
+    border: 3px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+    border-spacing: 0px;
+    color: white;
+    width: 60%;
+    font-weight: 300;
+    margin: 20px 0 0 10px;
+    word-break: keep-all;
+}
+.table1 td{
+    border: 3px solid rgb(255, 255, 255);
+    font-size: calc(11px+1.5vw);
+    padding: 20px;
+    text-align: center;
+    font-weight: 300;
+    word-break: break-word;
+}
+.table1 th{
+    border: 3px solid rgb(255, 255, 255);
+    font-size: calc(11px+1.5vw);
+    padding: 20px;
+    text-align: center;  
+    font-weight: 300;
+    word-break: break-word;
+}
+.spec{
+    margin-left: 10px;
+}
+/* 🟡테이블 설정 끝🟡 */
+
 /* 🔺자동넘김 사진 설정 끝(페이지마다 A,B,C맞춰줘야함)🔺 */
 
 /* 🔻swiper 사진 설정 시작(페이지 수마다 A,B,C필요없음)🔻 */
@@ -203,6 +257,7 @@
 
 /* 🟡SECTION 마다 폰트설정 시작 -[h1, h2, h3,]🟡 */
 /* ❗❗CSS는 순차적용이니 공통먼저 설정후 아래에 SECTION별 변경❗❗ */
+
 main h1{
     font-size: calc(26px + 1.4vw);
     font-weight: 500;
@@ -223,7 +278,10 @@ main h3{
     margin-top: 8px;
     color: #f5f5f7;
 }
-
+.main-sec1 h1, .main-sec1 h2, .main-sec1 h3,.main-sec1 a{
+    color: black;
+    font-weight: 900;
+}
 /* 🟡SECTION 마다 폰트설정 끝 -[h1, h2, h3,]🟡 */
 
 /* (360 / 390 / 428 /  768) */
@@ -236,6 +294,9 @@ main h3{
         font-size: calc(12px + 0.9vw);
         font-weight: 200;
     }
+    .table1{
+        width: 95% ;
+    }
 }
 
 @media(max-width:428px){
@@ -244,8 +305,15 @@ main h3{
         font-weight: 300;
     }
     main h3{
-        font-size: calc(12px + 0.9vw);
+        font-size: calc(13px + 0.4vw);
         font-weight: 200;
+    }
+    main h2{
+        font-size: calc(14px + 0.4vw);
+        font-weight: 200;
+    }
+    th{
+        font-size: calc(14px);
     }
 }
    
@@ -253,25 +321,37 @@ main h3{
 /* (360 / 390 / 428 /  683) */
 @media(max-width:390px){
     main h1{
-        font-size: calc(16px + 1.4vw);
+        font-size: calc(14px + 1.0vw);
         font-weight: 300;
     }
     main h3{
-        font-size: calc(11px + 0.8vw);
+        font-size: calc(13px + 0.2vw);
         font-weight: 200;
     }
-
+    main h2{
+        font-size: calc(14px + 0.4vw);
+        font-weight: 200;
+    }
+    th{
+        font-size: calc(12px);
+    }
 }
 
 /* (360 / 390 / 428 /  683) */
 @media(max-width:360px){
     main h1{
-        font-size: calc(15px + 1.4vw);
+        font-size: calc(18px);
         font-weight: 200;
     }
     main h3{
-        font-size: calc(10px + 0.8vw);
+        font-size: calc(13px);
         font-weight: 100;
     }
-
+    main h2{
+        font-size: calc(15px);
+        font-weight: 200;
+    }
+    th{
+        font-size: calc(12px);
+    }
 }
